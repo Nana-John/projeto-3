@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>essenza Verde</title>
+
+</head>
+
+<body>
+<header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+<div class="container">
+        <h1 class="navbar-brand m-0">Essenza Verde</h1>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+            <ul class="nav nav-pills d-block d-md-flex">
+                <li class="nav-item fw-bold">
+                    <a href="#cardapio" class="nav-link">
+                        <i class="bi bi-list"></i><span class="text">Menu</span>
+                    </a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#reserva" class="nav-link" aria-label="Reserva">
+                        <i class="bi bi-calendar"></i><span class="text">Reserva</span>
+                    </a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a href="#about" class="nav-link" aria-label="Sobre Nós">
+                        <i class="bi bi-flower3"></i><span class="text">Sobre Nós</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</div>
+</header>
+<div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="about-restaurant" class="my-4">
+        <div id="restaurantCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./Imagem/area-externa-restaurante.jpeg" class="d-block w-100" alt="Vista panorâmica do restaurante">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./Imagem/Cardapio/p4.jpeg" class="d-block w-100" alt="Pratos e iguarias do restaurante">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./Imagem/area-externa-2.jpeg" class="d-block w-100" alt="Pratos e iguarias do restaurante">
+                </div>
+            </div>
+            <!-- Controles do Carrossel -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#restaurantCarousel" class="active" data-bs-slide-to="0" ></button>
+                <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="1" ></button>
+                <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="2" ></button>
+            </div>
+        </div>
+            <!-- Cardápio -->
+<section class="cardapio" id="cardapio">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-title text-center">Nosso Cardápio</h2>
+        </div>
+            <div class="row">
+        <aside class="col-md-2">
+<nav class="nav nav-pills d-block nav-cardapio text-colored">
+    <button type="button" data-bs-toggle="tab" data-bs-target="#pratop" class="nav nav-link text-colored active">Pratos</button>
+    <button type="button" data-bs-toggle="tab" data-bs-target="#drink" class="nav nav-link text-colored">Drinks</button>
+    <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="nav nav-link text-colored">Sobremesas</button>
+</aside>
+        <div class="col-md-10">
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="d-flex w-100 img-fluid" id="pratop" src="./Imagem/Cardapio/p3.jpeg" alt="prato de salada essenza"/>
+                            <h3>Jardim de Verão</h3>
+                            <h6>Uma sinfonia de cores e sabores</h6>
+                            <p class="text-align">Legumes orgânicos da estação em seu auge, como abobrinha grelhada e tomate cereja confitado, harmonizam-se com rúcula selvagem e flores comestíveis. Uma experiência gastronômica vibrante e memorável.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-flex w-100 img-fluid" id="drink" src="./Imagem/Cardapio/Flor de Caju.jpeg" alt="drink de caju essenza"/>
+                            <h3>Flor de Caju</h3>
+                            <h6>Sol, calor e sabor tropical.</h6>
+                            <p class="text-align">Cachaça artesanal, cajuína, suco de limão e xarope de melado.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-flex w-100 img-fluid" id="sobremesas" src="./Imagem/Cardapio/sobremesa-choc.jpeg" alt="sobremesa de chocolate essenza"/>
+                            <h3>Essenza di Cacao</h3>
+                            <h6>O auge do chocolate vegano.</h6>
+                            <p class="text-align">Mousse de chocolate vegano com crocante de avelã e frutas vermelhas frescas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+</section>
+
+
+            <!-- Reserva -->
+
+        <section id="reserva" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Reserva</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <p class="texto-reserva">Garanta seu lugar e viva a experiência Essenza Verde!</p>
+                        <div class="col-md-7">
+                            <form action="#" method="post"> 
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome completo:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="data" class="form-label">Data da reserva:</label>
+                                <input type="date" class="form-control" id="data" name="data" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form> 
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="./imagem/imagem-reserva.jpg" class="d-block w-100 rounded" id="reserva-foto" alt=" mesa de restaurante ilustrada"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pt-5 pb-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="./Imagem/area-interna-restaurante.jpeg" class="d-block w-100 rounded"  id="responsive-img" alt="prato de salada">
+                </div>
+                <div class="col-md-7">
+                <h2 >Sobre Nós</h2>
+                    <p class="texto-justificado">
+                        O <b>Essenza Verde</b> é um restaurante vegano e vegetariano sofisticado, localizado em um casarão histórico reformado e cercado por paisagens exuberantes. Com um ambiente que combina elegância contemporânea e toques de natureza, o espaço proporciona uma experiência gastronômica única, focada em sustentabilidade. O menu, elaborado por chefs renomados, valoriza ingredientes sazonais em pratos que vão de entradas delicadas a sobremesas inovadoras, oferecendo uma celebração de sabores frescos e autênticos. Ideal para jantares românticos, reuniões de negócios e celebrações especiais, o Essenza Verde é um verdadeiro refúgio para quem aprecia a arte de comer bem em meio ao conforto e à natureza.                    
+                    </p>
+                    <h3>Sobre o espaço</h3>
+                    <p class="texto-justificado">Com grandes janelas que permitem a entrada de luz natural e vistas privilegiadas para jardins cuidadosamente cultivados, cada refeição no Essenza Verde é uma experiência sensorial completa. O interior é decorado com um estilo minimalista e refinado, utilizando tons terrosos e detalhes em madeira que evocam a simplicidade e o requinte da culinária vegana e vegetariana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+</div>
+
+<script src="lib/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+<footer class="bg-dark text-white text-center py-4 static-bottom">
+    <div class="container">
+    <ul class="list-inline"> 
+        <li class="list-inline-item">
+        <a href="#" class="text-white"> <i class="bi bi-facebook"></i> </a>
+        </li>
+        <li class="list-inline-item">
+        <a href="#" class="text-white"> <i class="bi bi-twitter"></i> </a>
+        </li>
+        <li class="list-inline-item">
+        <a href="#" class="text-white"> <i class="bi bi-instagram"></i> </a>
+        </li>
+    </ul>
+    <p>2024 &copy; Projeto 3 - Alessandra Mairis</p> 
+    </div>
+</footer>
+</body>
+</html>
